@@ -4,7 +4,6 @@
         "es2021": true
     },
     "extends": [
-        "YOUR_OTHER_CONFIG_HERE",
         "prettier",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",

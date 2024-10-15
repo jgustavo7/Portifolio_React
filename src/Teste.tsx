@@ -10,6 +10,11 @@ const Botao = styled.button<BotaoProps>`
   font-size: ${(props) => props.fontSize || '16px'};
 `
 
+const BotaoPerigo = styled(Botao)`
+  background-color: red;
+  color: #fff;
+`
+
 function Teste() {
   return (
     <>
@@ -19,6 +24,7 @@ function Teste() {
     <Botao fontSize="14px" principal={false}>
       Cancelar
     </Botao>
+    <BotaoPerigo principal>Não clique aqui</BotaoPerigo>
     </>
   )
 }
