@@ -13,18 +13,24 @@ const Botao = styled.button<BotaoProps>`
 const BotaoPerigo = styled(Botao)`
   background-color: red;
   color: #fff;
+
+  span {
+    text-decoration: line-through;
+  }
 `
 
 function Teste() {
   return (
     <>
-    <Botao fontSize="18px" principal>
-      Enviar
+      <Botao fontSize="18px" principal>
+        Enviar
       </Botao>
-    <Botao fontSize="14px" principal={false}>
-      Cancelar
-    </Botao>
-    <BotaoPerigo principal>Não clique aqui</BotaoPerigo>
+      <Botao fontSize="14px" principal={false}>
+        Cancelar
+      </Botao>
+      <BotaoPerigo as="a" principal>
+        <span>Não clique aqui</span>
+      </BotaoPerigo>
     </>
   )
 }
